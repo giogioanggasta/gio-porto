@@ -1,8 +1,8 @@
-import { moreWork } from '../data/portfolio.js'
+import { ARROW, moreWork } from '../data/portfolio.js'
 
 export default function MoreWork() {
   return (
-    <section id="more-work" aria-labelledby="more-work-title">
+    <section style={{ paddingTop: 0 }} aria-labelledby="more-work-title">
       <div className="wrap">
         <div className="sec-head">
           <h2 id="more-work-title">more work</h2>
@@ -10,16 +10,31 @@ export default function MoreWork() {
         </div>
         <div className="more-grid">
           {moreWork.map((item) => (
-            <article className="more-card" key={item.id}>
-              <span className="more-label">{item.label}</span>
-              <span className="more-company">{item.company}</span>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <p className="more-period">{item.period}</p>
-              <a href={item.behance} target="_blank" rel="noreferrer">
-                view on behance
-              </a>
-            </article>
+            <div className="more-card" key={item.id}>
+              <div className={`more-banner mb-${item.banner}`}>
+                <span>{item.label}</span>
+              </div>
+              <div className="more-body">
+                <span className="co">{item.company}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <span className="when">{item.period}</span>
+                <a href={item.behance} target="_blank" rel="noreferrer">
+                  view on behance
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    aria-hidden="true"
+                  >
+                    <path d={ARROW} />
+                  </svg>
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       </div>

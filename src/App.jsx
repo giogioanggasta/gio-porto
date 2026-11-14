@@ -3,7 +3,6 @@ import Hero from './components/Hero.jsx'
 import ProjectCase from './components/ProjectCase.jsx'
 import MoreWork from './components/MoreWork.jsx'
 import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx'
 import ContactFooter from './components/ContactFooter.jsx'
 import Lightbox from './components/Lightbox.jsx'
@@ -50,7 +49,6 @@ export default function App() {
         </section>
         <MoreWork />
         <About />
-        <Skills />
         <Experience />
       </main>
       <ContactFooter />

@@ -8,7 +8,7 @@ export default function Hero() {
           <a className="brand" href="#top">
             giovanni anggasta<i>.</i>
           </a>
-          <nav className="nav-links" aria-label="Main navigation">
+          <nav className="nav-links" aria-label="Main">
             <a href="#work">work</a>
             <a href="#about">about</a>
             <a href="#experience">experience</a>
@@ -36,7 +36,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <div className="stage">
+          <div className="stage" aria-label="Portfolio cover">
             <div className="sel-box" aria-hidden="true">
               UX/UI
               <span className="h tl" />
@@ -49,10 +49,21 @@ export default function Hero() {
               2026
             </span>
             <div className="cursor-wrap" aria-hidden="true">
-              <svg width="34" height="34" viewBox="0 0 24 24" fill="#0057ff">
-                <path d="M4 2 L20 12 L13 13 L9 20 Z" />
+              <svg width="34" height="38" viewBox="0 0 34 38" fill="none" aria-hidden="true">
+                <path
+                  d="M4 2 L30 20 L17.5 22.5 L24 35 L18.5 37.5 L12 25 L4 32 Z"
+                  fill="#0057ff"
+                  stroke="#ffffff"
+                  strokeWidth="2.5"
+                  strokeLinejoin="round"
+                />
               </svg>
-              <span className="cursor-tag">giovanni anggasta</span>
+              <span className="cursor-tag">
+                giovanni anggasta
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f6e94c" aria-hidden="true">
+                  <path d="M12 1 L14.4 9.6 L23 12 L14.4 14.4 L12 23 L9.6 14.4 L1 12 L9.6 9.6 Z" />
+                </svg>
+              </span>
             </div>
           </div>
 
@@ -77,20 +88,20 @@ export default function Hero() {
             </a>
           </div>
 
-          <dl className="hero-meta">
+          <div className="hero-meta">
             <div className="item">
-              <dt>{profile.role}</dt>
-              <dd>{profile.availableNote}</dd>
+              <b>{profile.role}</b>
+              <span>{profile.availableNote}</span>
             </div>
             <div className="item">
-              <dt>{profile.projectCount}</dt>
-              <dd>{profile.projectCountNote}</dd>
+              <b>{profile.projectCount}</b>
+              <span>{profile.projectCountNote}</span>
             </div>
             <div className="item">
-              <dt>{profile.location}</dt>
-              <dd>{profile.phoneDisplay}</dd>
+              <b>{profile.location}</b>
+              <span>{profile.phoneDisplay}</span>
             </div>
-          </dl>
+          </div>
         </div>
       </section>
     </>
