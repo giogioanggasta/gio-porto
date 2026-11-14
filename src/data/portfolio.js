@@ -1,6 +1,11 @@
 // All content on this site, in one place. Every fact here comes from
 // Giovanni Anggasta's CV or his Behance profile. Nothing is invented.
 
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`
+const asset = (path) => `${base}${path.replace(/^\//, '')}`
+
 export const profile = {
   name: 'Giovanni Anggasta',
   nameLower: 'giovanni anggasta',
@@ -12,7 +17,7 @@ export const profile = {
   phoneHref: 'tel:+6285186881710',
   behance: 'https://www.behance.net/giovannanggast',
   behanceLabel: 'behance.net/giovannanggast',
-  cvUrl: '/CV-Giovanni-Anggasta.pdf',
+  cvUrl: asset('CV-Giovanni-Anggasta.pdf'),
   heroLine: 'ui/ux designer crafting user-centered digital products.',
   heroIntro:
     'Passionate and creative UI/UX Designer designing user-centered digital experiences for web and mobile applications. Adept at conducting user research, creating wireframes and prototypes, and collaborating with cross-functional teams to bring innovative solutions to life, balancing user needs with business goals.',
@@ -46,14 +51,14 @@ export const projects = [
       'Full visual system: typeface, palette and components',
     ],
     cover: {
-      src: '/images/cryptox/1.png',
+      src: asset('images/cryptox/1.png'),
       alt: 'CryptoX app home screen on a phone, showing a watchlist of BTC, ETH, SOL and DOGE prices',
     },
     gallery: [
-      { src: '/images/cryptox/2.png', caption: 'Send stablecoin', alt: 'CryptoX send stablecoin screen with amount, coin and network selection' },
-      { src: '/images/cryptox/3.png', caption: 'Send flow and confirmation', alt: 'CryptoX screens: home watchlist, send form and send confirmation' },
-      { src: '/images/cryptox/4.png', caption: 'Typeface and color system', alt: 'CryptoX design system: typeface specimen and main color swatches' },
-      { src: '/images/cryptox/5.png', caption: 'Progress and receipt', alt: 'CryptoX transaction progress and successful transaction receipt screens' },
+      { src: asset('images/cryptox/2.png'), caption: 'Send stablecoin', alt: 'CryptoX send stablecoin screen with amount, coin and network selection' },
+      { src: asset('images/cryptox/3.png'), caption: 'Send flow and confirmation', alt: 'CryptoX screens: home watchlist, send form and send confirmation' },
+      { src: asset('images/cryptox/4.png'), caption: 'Typeface and color system', alt: 'CryptoX design system: typeface specimen and main color swatches' },
+      { src: asset('images/cryptox/5.png'), caption: 'Progress and receipt', alt: 'CryptoX transaction progress and successful transaction receipt screens' },
     ],
     behance: 'https://www.behance.net/gallery/247577603/CryptoX-Stablecoin-App',
   },
@@ -81,13 +86,13 @@ export const projects = [
       'PIN-secured payment and live order tracking',
     ],
     cover: {
-      src: '/images/hokben/1.png',
+      src: asset('images/hokben/1.png'),
       alt: 'HokBen app home screen on a phone with promos, HokBen Cash balance and order options',
     },
     gallery: [
-      { src: '/images/hokben/2.png', caption: 'Sign in, home and menu', alt: 'HokBen screens: sign in, home, and menu browsing' },
-      { src: '/images/hokben/3.png', caption: 'Payment and orders', alt: 'HokBen screens: PIN entry, payment success and order list' },
-      { src: '/images/hokben/4.png', caption: 'Hoka Mission and Lucky Wheel', alt: 'HokBen gamification: Hoka Mission map and Lucky Wheel on phone mockups' },
+      { src: asset('images/hokben/2.png'), caption: 'Sign in, home and menu', alt: 'HokBen screens: sign in, home, and menu browsing' },
+      { src: asset('images/hokben/3.png'), caption: 'Payment and orders', alt: 'HokBen screens: PIN entry, payment success and order list' },
+      { src: asset('images/hokben/4.png'), caption: 'Hoka Mission and Lucky Wheel', alt: 'HokBen gamification: Hoka Mission map and Lucky Wheel on phone mockups' },
     ],
     behance: 'https://www.behance.net/giovannanggast',
   },
@@ -115,12 +120,12 @@ export const projects = [
       '500 bonus points for sharing completed missions',
     ],
     cover: {
-      src: '/images/taman-safari/1.png',
+      src: asset('images/taman-safari/1.png'),
       alt: 'Taman Safari Quest screens fanned out: illustrated park map, Red Panda plush mission and QR scan',
     },
     gallery: [
-      { src: '/images/taman-safari/2.png', caption: 'Map, mission and detail', alt: 'Taman Safari Quest: park map, Red Panda mission splash and Baby Zoo mission detail' },
-      { src: '/images/taman-safari/3.png', caption: 'Mission card and reward', alt: 'Taman Safari Quest: zoomed park map mission card and mission-complete trophy screen' },
+      { src: asset('images/taman-safari/2.png'), caption: 'Map, mission and detail', alt: 'Taman Safari Quest: park map, Red Panda mission splash and Baby Zoo mission detail' },
+      { src: asset('images/taman-safari/3.png'), caption: 'Mission card and reward', alt: 'Taman Safari Quest: zoomed park map mission card and mission-complete trophy screen' },
     ],
     behance: 'https://www.behance.net/giovannanggast',
   },
@@ -149,13 +154,13 @@ export const projects = [
       'Real-time availability, secure payments and efficient booking management',
     ],
     cover: {
-      src: '/images/travelies/1.png',
+      src: asset('images/travelies/1.png'),
       alt: 'Travelies hotel booking app cover with hotel listings, search and filter screens',
     },
     gallery: [
-      { src: '/images/travelies/2.png', caption: 'Welcome, feed and search', alt: 'Travelies screens: welcome, hotel feed and search' },
-      { src: '/images/travelies/3.png', caption: 'Dates and guests', alt: 'Travelies booking flow: calendar date picker and guest selector' },
-      { src: '/images/travelies/4.png', caption: 'Hotel detail and location', alt: 'Travelies hotel detail page with reviews and location map of AYANA Resort Bali' },
+      { src: asset('images/travelies/2.png'), caption: 'Welcome, feed and search', alt: 'Travelies screens: welcome, hotel feed and search' },
+      { src: asset('images/travelies/3.png'), caption: 'Dates and guests', alt: 'Travelies booking flow: calendar date picker and guest selector' },
+      { src: asset('images/travelies/4.png'), caption: 'Hotel detail and location', alt: 'Travelies hotel detail page with reviews and location map of AYANA Resort Bali' },
     ],
     behance: 'https://www.behance.net/gallery/247496175/Hotel-Booking-App',
   },

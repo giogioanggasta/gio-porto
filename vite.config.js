@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 // repository root, so the default base path is correct.
 export default defineConfig({
   plugins: [react()],
+  base: '/gio-porto/',
 })
