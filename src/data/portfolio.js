@@ -258,12 +258,6 @@ export const moreWork = [
 
 export const about = {
   headline: 'research first, pixels second.',
-  // Small inline photos inside the headline, as on the website:
-  // CryptoX send-flow screen, then the Travelies welcome screen.
-  chipImages: [
-    { src: '/images/cryptox/3.png', alt: '' },
-    { src: '/images/travelies/2.png', alt: '' },
-  ],
   paragraphs: [
     "I'm a UI/UX designer who believes good products start with listening: research first, pixels second.",
     'Adept at conducting user research, creating wireframes and prototypes, and collaborating with cross-functional teams to bring innovative solutions to life. Skilled in tools such as Figma, Sketch, and Adobe Creative Suite, with a keen eye for aesthetics and attention to detail.',

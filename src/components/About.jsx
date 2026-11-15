@@ -9,17 +9,7 @@ export default function About() {
           <h2 id="about-title">about &amp; skills</h2>
           <span className="sec-note">How I work and what I use</span>
         </div>
-        <p className="about-lead">
-          research
-          <span className="chip-img">
-            <img src={about.chipImages[0].src} alt={about.chipImages[0].alt} />
-          </span>
-          first, pixels
-          <span className="chip-img">
-            <img src={about.chipImages[1].src} alt={about.chipImages[1].alt} />
-          </span>
-          second.
-        </p>
+        <p className="about-lead">research first, pixels second.</p>
         <div className="about-cols">
           <div>
             {about.paragraphs.map((p) => (
