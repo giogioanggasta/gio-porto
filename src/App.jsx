@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import Hero from './components/Hero.jsx'
 import ProjectCase from './components/ProjectCase.jsx'
 import MoreWork from './components/MoreWork.jsx'
+import ContactPanel from './components/ContactPanel.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import ContactFooter from './components/ContactFooter.jsx'
@@ -47,6 +48,7 @@ export default function App() {
             ))}
           </div>
         </section>
+        <ContactPanel />
         <MoreWork />
         <About />
         <Experience />

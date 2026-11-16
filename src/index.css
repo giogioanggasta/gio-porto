@@ -257,6 +257,29 @@
       .edu-card h3{ margin:8px 0 0; font-size:1.14rem; font-weight:800; letter-spacing:-.01em; }
       .edu-card p{ color:var(--muted); margin:7px 0 0; font-size:.94rem; }
 
+      /* ---------- Contact panel (chapter 05) ---------- */
+      .contact-panel-sec{ padding:0 0 84px; }
+      .contact-panel{
+        background:var(--green-panel); color:#fff; border-radius:28px;
+        padding:clamp(28px, 5vw, 56px) clamp(20px, 4.5vw, 48px);
+      }
+      .cp-head{ display:flex; justify-content:space-between; align-items:baseline; gap:16px; }
+      .cp-label{ font-size:.92rem; font-weight:700; color:rgba(255,255,255,.75); text-transform:lowercase; }
+      .cp-num{ font-size:1rem; font-weight:400; color:rgba(255,255,255,.75); font-variant-numeric:tabular-nums; }
+      .contact-panel h2{
+        margin:26px 0 0; font-weight:800; letter-spacing:-.04em; line-height:1;
+        font-size:clamp(2.6rem, 8vw, 5.6rem); text-transform:lowercase;
+      }
+      .cp-intro{ margin:18px 0 0; color:rgba(255,255,255,.82); font-size:1.02rem; max-width:560px; }
+      .cp-actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
+      .btn-outline-light{ background:transparent; border-color:rgba(255,255,255,.55); color:#fff; }
+      .btn-outline-light:hover{ border-color:#fff; background:rgba(255,255,255,.08); }
+      .cp-meta{
+        display:flex; flex-wrap:wrap; gap:10px 28px; margin-top:38px; padding-top:22px;
+        border-top:1px solid rgba(255,255,255,.22);
+        color:rgba(255,255,255,.72); font-size:.88rem; font-weight:600; text-transform:lowercase;
+      }
+
       /* ---------- Contact / footer ---------- */
       .contact{ background:var(--blue-dark); color:#fff; padding:76px 0 34px; }
       .contact .c-kicker{ font-weight:700; font-size:1rem; color:var(--blue-soft); margin:0; text-transform:lowercase; }
