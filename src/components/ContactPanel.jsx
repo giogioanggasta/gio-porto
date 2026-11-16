@@ -16,7 +16,7 @@ function Arrow() {
   )
 }
 
-// Chapter 05 — "let's work together" panel, straight after the case
+// Chapter 06 — "let's work together" panel, straight after the case
 // studies. Same green panel treatment as the site's other panels
 // (#0c3b2e, 28px radius), left aligned, one idea: get in touch.
 // Links are Giovanni's real addresses only; no LinkedIn.
@@ -27,7 +27,7 @@ export default function ContactPanel() {
         <div className="contact-panel">
           <div className="cp-head">
             <span className="cp-label">[ contact ]</span>
-            <span className="cp-num">05</span>
+            <span className="cp-num">06</span>
           </div>
           <h2 id="contact-panel-title">let&rsquo;s work together.</h2>
           <p className="cp-intro">

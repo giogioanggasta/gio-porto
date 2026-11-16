@@ -51,6 +51,10 @@ const ROUTES = {
     d: 'M-20 90 C 220 20, 420 170, 660 110 S 1020 60, 1130 130',
     stroke: 'rgba(255,255,255,.35)',
   },
+  flex: {
+    d: 'M-20 380 C 240 300, 430 420, 680 340 S 1010 280, 1130 360',
+    stroke: 'rgba(19,27,22,.22)',
+  },
 }
 
 const ARROW = 'M6 18 L18 6 M9 6 H18 V15'
@@ -217,6 +221,46 @@ export const projects = [
       { label: 'view on behance', href: 'https://www.behance.net/gallery/247577603/CryptoX-Stablecoin-App' },
     ],
     behance: 'https://www.behance.net/gallery/247577603/CryptoX-Stablecoin-App',
+  },
+  {
+    id: 'flex-academy',
+    number: '05',
+    title: 'Flex Academy',
+    shortTitle: 'flex academy',
+    category: 'Education · Responsive web',
+    date: 'Nov 2026',
+    panel: 'light',
+    route: ROUTES.flex,
+    statement:
+      'Learn the playbook, launch your first units, and scale what you have built — an education platform for short-term rental operators.',
+    role: 'UI/UX Designer',
+    focus: 'Responsive landing page · Launch & Scale journeys',
+    description:
+      'Flex Academy is an education platform for aspiring and existing short-term rental operators, built on the operational playbook, systems, and experience of The Flex and Base360. The responsive landing page is designed around two journeys: Launch, for people starting their first short-term rental units, and Scale, for existing operators growing a structured business.',
+    designNote:
+      'Created as a design test case for The Flex (UK). The design focuses on clear information hierarchy, an editorial visual direction, and straightforward conversion paths — a free masterclass for starters, and a free strategy call for operators.',
+    tags: ['Web Design', 'Responsive Design', 'Landing Page', 'Education'],
+    highlights: [
+      'Two journeys: Launch for first units, Scale for growing an existing portfolio',
+      'Six-milestone curriculum, from finding the opportunity to scaling the business',
+      'Operational proof: real assets and occupancy, not passive-income promises',
+      'Designed in Figma for desktop and mobile, with a serif editorial hero on small screens',
+    ],
+    cover: {
+      src: '/images/flex-academy/1.png',
+      alt: 'Flex Academy desktop hero: Build a Short-Term Rental Business That Can Actually Scale, with Launch and Scale cards',
+    },
+    gallery: [
+      { src: '/images/flex-academy/2.png', caption: 'Lineage & ecosystem', alt: 'Flex Academy: Built from the same playbook that built The Flex — The Flex, Base360 and Flex Academy' },
+      { src: '/images/flex-academy/3.png', caption: 'Six-milestone curriculum', alt: 'Flex Academy curriculum: six milestones, from finding the opportunity to scaling the business' },
+      { src: '/images/flex-academy/4.png', caption: 'Two curated tracks', alt: 'Flex Academy: Where are you now? Launch and Scale track cards' },
+      { src: '/images/flex-academy/5.png', caption: 'Operational proof', alt: 'Paris living room interior, the operational-proof visual for Flex Academy' },
+      { src: '/images/flex-academy/6.png', caption: 'Mobile hero', alt: 'Flex Academy mobile hero with a serif headline and Launch and Scale pathway selector' },
+    ],
+    links: [
+      { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
+    ],
+    behance: 'https://www.behance.net/giovannanggast',
   },
 ]
 
@@ -390,6 +434,14 @@ export const lightboxCaps = {
     'CryptoX: send flow and confirmation',
     'CryptoX: typeface and color system',
     'CryptoX: transaction progress and receipt',
+  ],
+  'flex-academy': [
+    'Flex Academy: desktop hero',
+    'Flex Academy: lineage and ecosystem',
+    'Flex Academy: six-milestone curriculum',
+    'Flex Academy: two curated tracks',
+    'Flex Academy: operational proof',
+    'Flex Academy: mobile hero',
   ],
 }
 

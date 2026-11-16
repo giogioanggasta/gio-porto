@@ -36,7 +36,7 @@ export default function App() {
             <div className="sec-head">
               <h2 id="work-title">selected work</h2>
               <span className="sec-note">
-                Four case studies. Select any image to enlarge it.
+                Five case studies. Select any image to enlarge it.
               </span>
             </div>
             {projects.map((project) => (
