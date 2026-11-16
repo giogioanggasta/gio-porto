@@ -140,10 +140,6 @@
 
       /* ---------- Projects ---------- */
       .project{ padding:44px 0 58px; }
-      .statement{
-        text-align:center; text-transform:uppercase; font-weight:600; letter-spacing:.04em;
-        font-size:clamp(.82rem, 1.8vw, 1rem); line-height:1.65; max-width:640px; margin:0 auto 26px; color:var(--ink);
-      }
       .panel{ border-radius:28px; padding:clamp(16px, 3.6vw, 40px); position:relative; overflow:hidden; }
       .panel-blue{ background:var(--blue); }
       .panel-light{ background:#e7eae0; }

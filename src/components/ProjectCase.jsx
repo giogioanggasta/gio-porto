@@ -20,7 +20,6 @@ function ArrowIcon({ size = 13 }) {
 export default function ProjectCase({ project, onOpenGallery }) {
   return (
     <article className="project">
-      <p className="statement">{project.statement}</p>
       <div className={`panel panel-${project.panel}`}>
         <svg
           className="panel-route"

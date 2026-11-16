@@ -71,8 +71,6 @@ export const projects = [
     date: '',
     panel: 'light',
     route: ROUTES.hokben,
-    statement:
-      'Ordering HokBen in a few taps, across delivery, take away, dine in, and drive thru, with loyalty built into every order.',
     role: 'UI/UX Designer',
     focus: 'Food ordering · Loyalty · Gamification',
     description:
@@ -109,8 +107,6 @@ export const projects = [
     date: '',
     panel: 'green',
     route: ROUTES.safari,
-    statement:
-      'A zoo visit turned into a quest: follow the map, scan the codes, finish the missions, win the red panda.',
     role: 'UI/UX Designer',
     focus: 'Illustrated map · QR missions · Rewards',
     description:
@@ -147,8 +143,6 @@ export const projects = [
     date: '',
     panel: 'orange',
     route: ROUTES.champ,
-    statement:
-      'One app for every CHAMP Resto brand: explore the menu, customise an order, then check out for delivery, pickup, or dine-in.',
     role: 'UI/UX Designer',
     focus: 'CHAMP Resto Indonesia · Mobile app · Design system',
     description:
@@ -192,8 +186,6 @@ export const projects = [
     date: 'Apr 2026',
     panel: 'blue',
     route: ROUTES.cryptox,
-    statement:
-      'A stablecoin wallet that makes sending USDT feel as simple as sending a message, with live prices in the same place.',
     role: 'UI/UX Designer',
     focus: 'Mobile app · Digital wallet · Design system',
     description:
@@ -231,8 +223,6 @@ export const projects = [
     date: 'Nov 2026',
     panel: 'light',
     route: ROUTES.flex,
-    statement:
-      'Learn the playbook, launch your first units, and scale what you have built — an education platform for short-term rental operators.',
     role: 'UI/UX Designer',
     focus: 'Responsive landing page · Launch & Scale journeys',
     description:
