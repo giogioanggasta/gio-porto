@@ -34,7 +34,7 @@ export default function App() {
         <section id="work" aria-labelledby="work-title">
           <div className="wrap">
             <div className="sec-head">
-              <h2 id="work-title">selected work</h2>
+              <h2 id="work-title">featured work</h2>
               <span className="sec-note">
                 Five case studies. Select any image to enlarge it.
               </span>

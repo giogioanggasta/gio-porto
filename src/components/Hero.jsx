@@ -78,7 +78,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a className="btn btn-blue" href="#work">
-              see selected work
+              see featured work
             </a>
             <a className="btn btn-white" href={profile.cvUrl} download>
               download cv
