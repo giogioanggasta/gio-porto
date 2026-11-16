@@ -437,7 +437,9 @@ export const lightboxCaps = {
 
 // Taman Safari Quest interactive prototype. Every screen is an original
 // Figma frame (440 x 956 px one-by-one exports), in the exact Figma order.
-// Only the transitions between screens are rebuilt (Smart Animate style).
+// The Otto home screen is intentionally skipped — the flow starts at the
+// Red Panda intro. Only the transitions between screens are rebuilt
+// (Smart Animate style).
 // Points: 100 + 150 + 350 + 600 + 700 = 1,900.
 export const safariMissions = [
   {
@@ -494,7 +496,6 @@ export const safariMissions = [
 
 export const safariSteps = (() => {
   const steps = [
-    { img: '/images/safari-quest/quest-home.png', anim: 'fade', mission: -1, cap: 'Home — 120,000 Points balance & vouchers. The “Start your quest here” button launches Safari Quest.' },
     { img: '/images/safari-quest/quest-intro.png', anim: 'push', mission: -1, cap: 'Mission intro: “Red Panda Plush — Play the Missions, Get the Plush”. The “Start!” button sits at the bottom.' },
     { img: '/images/safari-quest/quest-onboard1.png', anim: 'push', mission: -1, cap: 'The opening Safari Quest popup over the map — “Complete your missions and win exciting prizes!”' },
     { img: '/images/safari-quest/quest-onboard2.png', anim: 'fade', mission: -1, cap: 'Tutorial: the “Mission” explainer — complete the missions in each area to collect points.' },

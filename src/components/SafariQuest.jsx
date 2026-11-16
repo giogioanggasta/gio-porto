@@ -4,7 +4,7 @@
 // zooms in to a pin, the detail page slides up from below, and the
 // "Mission Complete!" card pops up over the map — the same transitions
 // as Smart Animate in the Figma prototype.
-// Flow (31 screens): home, Red Panda intro, 4 tutorial screens, map,
+// Flow (30 screens): Red Panda intro, 4 tutorial screens, map,
 // then per mission: map zoom, mission detail, Scan QR, success popup
 // over the next map — and the "MISSION COMPLETE!" finale at 1,900 pts.
 import { useCallback, useEffect, useRef, useState } from 'react'
@@ -183,7 +183,7 @@ export default function SafariQuest() {
       <div className="quest-layout">
         <div>
           <div className="quest-steps" aria-label="Prototype flow">
-            <span><b>1</b> Home &amp; intro</span>
+            <span><b>1</b> Red Panda intro</span>
             <span><b>2</b> Map tutorial</span>
             <span><b>3</b> Zoom to pin</span>
             <span><b>4</b> Mission detail</span>
@@ -246,7 +246,7 @@ export default function SafariQuest() {
           </div>
           <p className="quest-hint">
             How to try it: click the phone (or the Next button) to advance step
-            by step — exactly the Figma frame order, from home to “MISSION
+            by step — exactly the Figma frame order, from the Red Panda intro to “MISSION
             COMPLETE!”. Click a mission in the list on the left to jump
             straight to it.
           </p>
