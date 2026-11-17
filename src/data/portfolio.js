@@ -156,6 +156,19 @@ export const projects = [
       'Designed key features including menu discovery, product details, cart, checkout, order tracking, and customer account management',
       'Collaborated with stakeholders and developers to ensure design feasibility and consistent implementation',
     ],
+    results: {
+      title: 'testing results',
+      stats: [
+        { value: '82%', label: 'said the platform improved decisions' },
+        { value: '74%', label: 'would recommend the platform' },
+        { value: '11%', label: 'found the interface confusing' },
+        { value: '81%', label: 'called A/B testing essential' },
+      ],
+      quotes: [
+        'I can easily find the menu and place my order.',
+        'The new flow makes ordering much more seamless.',
+      ],
+    },
     cover: {
       src: '/images/champ/1.png',
       alt: 'Champ deck cover: Food App Champ for Champ Restaurant Indonesia, 2025, with the Champ app home screen',

@@ -87,6 +87,27 @@ export default function ProjectCase({ project, onOpenGallery }) {
         </ul>
       </div>
 
+      {project.results ? (
+        <div className="results">
+          <h3>{project.results.title}</h3>
+          <div className="results-stats">
+            {project.results.stats.map((stat) => (
+              <div className="result-stat" key={stat.label}>
+                <b>{stat.value}</b>
+                <span>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+          {project.results.quotes ? (
+            <div className="results-quotes">
+              {project.results.quotes.map((quote) => (
+                <blockquote key={quote}>{quote}</blockquote>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
       {project.id === 'taman-safari' ? <SafariQuest /> : null}
 
       <div className="gallery">
