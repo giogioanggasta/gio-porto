@@ -1,5 +1,4 @@
 import { ARROW } from '../data/portfolio.js'
-import HokBenIA from './HokBenIA.jsx'
 import SafariQuest from './SafariQuest.jsx'
 
 function ArrowIcon({ size = 13 }) {
@@ -125,7 +124,27 @@ export default function ProjectCase({ project, onOpenGallery }) {
         ))}
       </div>
 
-      {project.id === 'hokben' ? <HokBenIA /> : null}
+      {project.id === 'hokben' ? (
+        <figure className="ia-figure">
+          <button
+            type="button"
+            onClick={() =>
+              onOpenGallery(
+                project,
+                project.gallery.findIndex((img) => img.src.includes('/hokben/10.png')) + 1,
+              )
+            }
+            aria-label="Open information architecture diagram"
+          >
+            <img
+              src="/images/hokben/10.png"
+              alt="HokBen information architecture diagram — Home, Menu, Order, Outlet and Profile sections with order flows"
+              loading="lazy"
+            />
+          </button>
+          <figcaption>information architecture — tap to zoom</figcaption>
+        </figure>
+      ) : null}
 
       <div className="proj-links">
         {project.links.map((link) => (
