@@ -1,4 +1,4 @@
-import { ARROW } from '../data/portfolio.js'
+import { ARROW, asset } from '../data/portfolio.js'
 import SafariQuest from './SafariQuest.jsx'
 
 function ArrowIcon({ size = 13 }) {
@@ -137,7 +137,7 @@ export default function ProjectCase({ project, onOpenGallery }) {
             aria-label="Open information architecture diagram"
           >
             <img
-              src="/images/hokben/10.png"
+              src={asset('/images/hokben/10.png')}
               alt="HokBen information architecture diagram — Home, Menu, Order, Outlet and Profile sections with order flows"
               loading="lazy"
             />
