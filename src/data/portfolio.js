@@ -190,7 +190,6 @@ export const projects = [
       { src: '/images/taman-safari/2.png', caption: 'About the project & my role', alt: 'Taman Safari Quest slide: About The Project and My Role — gamification feature for the Taman Safari mobile app' },
       { src: '/images/taman-safari/3.png', caption: 'Map, mission & detail', alt: 'Taman Safari Quest: park map, Red Panda mission splash and Baby Zoo mission detail' },
       { src: '/images/taman-safari/4.png', caption: 'Mission card & reward', alt: 'Taman Safari Quest: zoomed park map mission card and mission-complete trophy screen' },
-      { src: '/images/taman-safari/5.png', caption: 'Thank you', alt: 'Taman Safari Quest closing slide: Thank You and contact email' },
     ],
     links: [
       { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
@@ -433,7 +432,6 @@ export const lightboxCaps = {
     'Taman Safari Quest: about the project & my role',
     'Taman Safari Quest: map, mission and detail',
     'Taman Safari Quest: mission card and reward',
-    'Taman Safari Quest: thank you',
   ],
   champ: [
     'Champ: cover — Food App Champ',
