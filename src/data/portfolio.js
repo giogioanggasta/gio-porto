@@ -145,9 +145,15 @@ export const projects = [
       alt: 'HokBen app home screen on a phone with promos, HokBen Cash balance and order options',
     },
     gallery: [
-      { src: '/images/hokben/2.png', caption: 'Sign in, home & menu', alt: 'HokBen screens: sign in, home, and menu browsing' },
-      { src: '/images/hokben/3.png', caption: 'Payment & orders', alt: 'HokBen screens: PIN entry, payment success and order list' },
-      { src: '/images/hokben/4.png', caption: 'Hoka Mission & Lucky Wheel', alt: 'HokBen gamification: Hoka Mission map and Lucky Wheel on phone mockups' },
+      { src: '/images/hokben/2.png', caption: 'About the project', alt: 'HokBen slide: About the project — Food Order App, client HokBen, 2025, UI/UX services' },
+      { src: '/images/hokben/3.png', caption: 'App experience', alt: 'HokBen slide: App Experience — sign in, home and menu screens' },
+      { src: '/images/hokben/4.png', caption: 'Menu, product detail & checkout', alt: 'HokBen slide: menu browsing, Irodori Bento 1 product detail and checkout' },
+      { src: '/images/hokben/5.png', caption: 'Payment & orders', alt: 'HokBen slide: PIN entry, payment successful and order list' },
+      { src: '/images/hokben/6.png', caption: 'Order detail & delivery address', alt: 'HokBen slide: order detail with delivery status and saved delivery addresses' },
+      { src: '/images/hokben/7.png', caption: 'Typography', alt: 'HokBen slide: Typography — Manrope typeface, Light, Regular, Medium and Bold' },
+      { src: '/images/hokben/8.png', caption: 'Gamification', alt: 'HokBen slide: Gamification — Hoka Mission levels and Lucky Wheel' },
+      { src: '/images/hokben/9.png', caption: 'Every craving, one app', alt: 'HokBen closing slide: Every Craving, One App — home and checkout screens' },
+      { src: '/images/hokben/10.png', caption: 'Information architecture', alt: 'HokBen information architecture diagram — Home, Menu, Order, Outlet and Profile sections with order flows' },
     ],
     links: [
       { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
@@ -407,12 +413,135 @@ export const contact = {
 
 // Lightbox captions, exactly as on the website: one per gallery image,
 // cover first, then the gallery in order.
+export const hokbenIA = {
+  title: 'information architecture',
+  note: 'Five sections in the bottom tab bar. Home opens into points, vouchers, scan, news and banners — and each order mode has its own flow.',
+  sections: [
+    {
+      id: 'home',
+      label: 'Home',
+      sub: [
+        {
+          label: 'Point',
+          info: ['Status level', 'Point value', 'Expired point', 'Milestone details (required point in each level)', 'Check in in 7 days, point earned in each day', 'Check in History'],
+          actions: ['Check in', 'How to earn extra point: Scan QR, Order Menu, Order Promo'],
+        },
+        {
+          label: 'Voucher',
+          info: ['Voucher Banner', 'Voucher Quantity'],
+          actions: ['"My Voucher" tab', 'Choose Voucher (go to voucher detail)', 'Use voucher (button)', '"Voucher Code" tab', 'Enter promo code'],
+        },
+        {
+          label: 'Scan',
+          info: ['MY QR CODE'],
+          actions: ['"SCAN QR" tab', '"MY QR" tab'],
+        },
+        {
+          label: 'News update',
+          info: ['See Title', 'See Image', 'Read content', 'See other update'],
+          actions: ['Read', 'Choose other update'],
+        },
+        {
+          label: 'Banner',
+          info: ['See Banner'],
+          actions: ['See banner Details'],
+        },
+      ],
+    },
+    {
+      id: 'menu',
+      label: 'Menu',
+      info: [
+        'Menu image',
+        'Menu Name',
+        'Price',
+        'Search',
+        { label: 'Food category', items: ['Hoka Bento', 'Noodle', 'Donburi', 'Fried chicken', 'Nabe', 'Ala carte', 'Grab n go', 'Dessert', 'Drink', 'Takeaway bag', 'Promo'] },
+        { label: 'Food menu', items: ['New', 'All', 'Promo', 'Fave', 'History'] },
+        'See available outlet',
+      ],
+      actions: ['Check available outlet', 'Add to cart', 'Love to fave', 'Choose menu to see details', 'Search menu', 'Choose foodmenu', 'Choose food category'],
+    },
+    {
+      id: 'order',
+      label: 'Order',
+      info: [
+        'Order id',
+        { label: 'Status steps', items: ['Payment confirmation', 'Order confirmed', 'Sending', 'Delivered'] },
+        'Deliver status',
+        'Deliver from',
+        'Deliver to',
+        'Payment method',
+        { label: 'Purchase detail', items: ["Menu's name", 'Quantity'] },
+        { label: 'Payment summary', items: ['Subtotal', 'Packaging Fee', 'Service Charge', 'Tax', 'Delivery Fee', 'Total Payment'] },
+      ],
+      actions: ['Copy Order ID', 'See History'],
+    },
+    {
+      id: 'outlet',
+      label: 'Outlet',
+      info: ["Outlet's address", "Outlet's List", 'KM distance', 'Outlet status open / close', 'Outlet open time', 'Outlet facility icon'],
+      actions: ['Search outlet', 'Choose outlet', 'See and choose by map', 'See outlet details'],
+    },
+    {
+      id: 'profile',
+      label: 'Profile',
+      info: [
+        'Profile Name',
+        'Phone number',
+        'Email',
+        'Status Level',
+        { label: 'Profile menu', items: ['HOKBEN reward', 'Voucher', 'Language', 'Saved Address', 'Privacy Policies', 'Terms of Use', 'Contact', 'Rate app'] },
+      ],
+      actions: ['Choose Profile Menu: Language, Saved Address, Privacy Policies, Terms of Use, Contact', 'Edit Profile', 'Log Out'],
+    },
+  ],
+  flows: [
+    {
+      mode: 'Delivery',
+      info: ['Deliver to', 'Deliver from', 'Time and distance', { label: 'Best seller', items: ['Maincourse', 'LRD Sides', 'Dessert', 'Beverage'] }, 'Menu image', 'Menu Name', 'Price'],
+      actions: ['Change Address deliver', 'Change deliver from', 'Sort by category', 'Add menu to cart', 'Change quantity', 'Search'],
+    },
+    {
+      mode: 'Takeaway',
+      info: ['Map', 'Outlet name', 'Outlet address', 'Search outlet', 'KM distance', 'Outlet status open / close', 'Outlet open time', 'Outlet facility icon'],
+      actions: ['Choose outlet', 'See and choose by map', 'Search outlet', 'See outlet details', 'Change quantity'],
+    },
+    {
+      mode: 'Dine in',
+      info: ['Outlet chosen', "Outlet's address", "Outlet's List", 'Menu image', 'Menu Name', 'Price', 'Search price', { label: 'Food category', items: ['Hoka Bento', 'Noodle', 'Donburi', 'Fried chicken', 'Nabe', 'Ala carte', 'Grab n go', 'Dessert', 'Drink', 'Takeaway bag', 'Promo'] }, { label: 'Food menu', items: ['New', 'All', 'Promo', 'Fave', 'History'] }, 'See total price'],
+      actions: ['Choose food category', 'Choose food menu', 'Love', 'Add to cart', 'Go to cart'],
+    },
+    {
+      mode: 'Drive thru',
+      info: ['Outlet chosen', "Outlet's address", 'Menu image', 'Menu Name', 'Price', 'Search', { label: 'Food category', items: ['Hoka Bento', 'Noodle', 'Donburi', 'Fried chicken', 'Nabe', 'Ala carte', 'Grab n go', 'Dessert', 'Drink', 'Takeaway bag', 'Promo'] }, { label: 'Food menu', items: ['New', 'All', 'Promo', 'Fave', 'History'] }, 'See total price'],
+      actions: ['Choose food category', 'Choose food menu', 'Love', 'Add to cart', 'Go to cart'],
+    },
+    {
+      mode: 'Special order',
+      info: ['Outlet Address', 'Location address (out of store)', 'Minimum order'],
+      actions: ['Choose event location', 'Input address, if in store', 'Choose outlet if out of store', 'Add notes', 'Additional item', 'Input quantity', 'Input date and time', 'Proceed to choose menu'],
+    },
+    {
+      mode: 'Bogo',
+      info: ['Location address (out of store)', 'Minimum order'],
+      actions: ['Choose City', 'Input address', 'Add notes', 'Additional item', 'Input quantity', 'Input date and time', 'Proceed to choose menu'],
+    },
+  ],
+}
+
 export const lightboxCaps = {
   hokben: [
     'HokBen: home',
-    'HokBen: sign in, home and menu',
-    'HokBen: PIN, payment success and orders',
-    'HokBen: Hoka Mission and Lucky Wheel',
+    'HokBen: about the project',
+    'HokBen: app experience',
+    'HokBen: menu, product detail & checkout',
+    'HokBen: PIN, payment success & orders',
+    'HokBen: order detail & delivery address',
+    'HokBen: typography — Manrope',
+    'HokBen: gamification — Hoka Mission & Lucky Wheel',
+    'HokBen: every craving, one app',
+    'HokBen: information architecture',
   ],
   'taman-safari': [
     'Taman Safari Quest: overview',

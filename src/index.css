@@ -196,6 +196,26 @@
       @media (max-width:820px){ .results-quotes{ grid-template-columns:1fr; } }
       .results-quotes blockquote{ margin:0; font-size:clamp(1.05rem, 2vw, 1.3rem); font-weight:600; line-height:1.45; letter-spacing:-.01em; }
       .results-quotes blockquote::before{ content:"“"; display:block; color:var(--blue); font-size:2.2rem; line-height:.8; margin-bottom:6px; }
+
+      /* ---------- Information architecture (HokBen) ---------- */
+      .ia{ margin-top:34px; border-top:1px solid var(--line); padding-top:26px; }
+      .ia h3{ font-size:1.05rem; font-weight:800; letter-spacing:-.02em; text-transform:lowercase; margin:0 0 10px; }
+      .ia-note{ color:var(--muted); font-size:1rem; margin:0 0 20px; max-width:640px; }
+      .ia-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+      .ia-tab{ font-family:inherit; font-size:.9rem; font-weight:700; color:var(--muted); background:var(--paper); border:1px solid var(--line); border-radius:999px; padding:8px 16px; cursor:pointer; }
+      .ia-tab.active{ background:var(--ink); border-color:var(--ink); color:var(--paper); }
+      .ia-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; }
+      .ia-block{ background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:20px; }
+      .ia-block > h4{ font-size:1.05rem; font-weight:800; letter-spacing:-.02em; text-transform:lowercase; margin:0 0 14px; }
+      .ia-cols{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+      @media (max-width:560px){ .ia-cols{ grid-template-columns:1fr; } }
+      .ia-block h5{ font-size:.8rem; font-weight:700; color:var(--faint); text-transform:lowercase; letter-spacing:.04em; margin:0 0 6px; }
+      .ia-list{ list-style:none; margin:0; padding:0; }
+      .ia-list > li{ color:var(--muted); font-size:.92rem; font-weight:500; line-height:1.45; padding:6px 0; border-bottom:1px solid var(--line); }
+      .ia-list > li:last-child{ border-bottom:none; }
+      .ia-list ul{ list-style:none; margin:6px 0 2px; padding-left:14px; border-left:2px solid var(--blue); }
+      .ia-list ul li{ color:var(--muted); font-size:.88rem; padding:2px 0; }
+      .ia-flows-title{ font-size:1.05rem; font-weight:800; letter-spacing:-.02em; text-transform:lowercase; margin:32px 0 14px; }
       .gallery{ display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-top:28px; }
       @media (max-width:820px){ .gallery{ grid-template-columns:repeat(2, 1fr); } }
       .gallery button{

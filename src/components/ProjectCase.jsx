@@ -1,4 +1,5 @@
 import { ARROW } from '../data/portfolio.js'
+import HokBenIA from './HokBenIA.jsx'
 import SafariQuest from './SafariQuest.jsx'
 
 function ArrowIcon({ size = 13 }) {
@@ -123,6 +124,8 @@ export default function ProjectCase({ project, onOpenGallery }) {
           </button>
         ))}
       </div>
+
+      {project.id === 'hokben' ? <HokBenIA /> : null}
 
       <div className="proj-links">
         {project.links.map((link) => (
