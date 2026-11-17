@@ -63,80 +63,8 @@ export { ARROW }
 
 export const projects = [
   {
-    id: 'hokben',
-    number: '01',
-    title: 'HokBen App',
-    shortTitle: 'hokben app',
-    category: 'Food and beverage · Mobile app',
-    date: '',
-    panel: 'light',
-    route: ROUTES.hokben,
-    role: 'UI/UX Designer',
-    focus: 'Food ordering · Loyalty · Gamification',
-    description:
-      'The app was crafted to provide a smooth and intuitive user journey, enabling customers to browse, order, and track their meals in just a few taps, across Delivery, Take Away, Dine In, and Drive Thru.',
-    designNote:
-      'Loyalty is built in through HokBen Cash and Points, while a gamification layer of missions and a Lucky Wheel keeps customers coming back between orders.',
-    tags: ['Mobile App', 'Food Ordering', 'Loyalty', 'Gamification'],
-    highlights: [
-      'Four ordering modes: Delivery, Take Away, Dine In, Drive Thru',
-      'HokBen Cash and Points wallet with reward redemption',
-      'Hoka Mission levels and Lucky Wheel gamification',
-      'PIN-secured payment and live order tracking',
-    ],
-    cover: {
-      src: '/images/hokben/1.png',
-      alt: 'HokBen app home screen on a phone with promos, HokBen Cash balance and order options',
-    },
-    gallery: [
-      { src: '/images/hokben/2.png', caption: 'Sign in, home & menu', alt: 'HokBen screens: sign in, home, and menu browsing' },
-      { src: '/images/hokben/3.png', caption: 'Payment & orders', alt: 'HokBen screens: PIN entry, payment success and order list' },
-      { src: '/images/hokben/4.png', caption: 'Hoka Mission & Lucky Wheel', alt: 'HokBen gamification: Hoka Mission map and Lucky Wheel on phone mockups' },
-    ],
-    links: [
-      { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
-    ],
-    behance: 'https://www.behance.net/giovannanggast',
-  },
-  {
-    id: 'taman-safari',
-    number: '02',
-    title: 'Taman Safari Quest',
-    shortTitle: 'taman safari quest',
-    category: 'Gamification · Mobile app',
-    date: '',
-    panel: 'green',
-    route: ROUTES.safari,
-    role: 'UI/UX Designer',
-    focus: 'Illustrated map · QR missions · Rewards',
-    description:
-      'A zoo gamification concept for Taman Safari Indonesia that turns a park visit into a quest. Visitors follow an illustrated map, complete missions at animal areas, like taking a photo with a baby lion at Baby Zoo, and scan QR codes on site to collect points.',
-    designNote:
-      'Points add up across levels toward a reward: a Red Panda plush. Sharing a finished mission earns bonus points, pulling friends into the game too.',
-    tags: ['Mobile App', 'Gamification', 'Illustrated Map', 'QR Missions'],
-    highlights: [
-      'Illustrated park map with mission pins and level cards',
-      'QR check-in missions worth 100 pts each, verified by staff',
-      'Reward loop: collect 1,900 points to claim the prize',
-      '+500 bonus points for sharing completed missions',
-    ],
-    cover: {
-      src: '/images/taman-safari/1.png',
-      alt: 'Taman Safari Quest screens fanned out: illustrated park map, Red Panda plush mission and QR scan',
-    },
-    gallery: [
-      { src: '/images/taman-safari/2.png', caption: 'Map, mission & detail', alt: 'Taman Safari Quest: park map, Red Panda mission splash and Baby Zoo mission detail' },
-      { src: '/images/taman-safari/3.png', caption: 'Mission card & reward', alt: 'Taman Safari Quest: zoomed park map mission card and mission-complete trophy screen' },
-    ],
-    links: [
-      { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
-      { label: 'view figma file', href: 'https://www.figma.com/design/m7l0mk5ug4GonwqNYTcvYW/TSI-Portfolio?node-id=0-1&t=2RPnvEYtzQ5JrDNd-1' },
-    ],
-    behance: 'https://www.behance.net/giovannanggast',
-  },
-  {
     id: 'champ',
-    number: '03',
+    number: '01',
     title: 'CHAMP: Food Ordering App',
     shortTitle: 'champ: food ordering app',
     category: 'Food ordering · 2025',
@@ -189,6 +117,78 @@ export const projects = [
       { label: 'view figma file', href: 'https://www.figma.com/design/bpdr1O80m3YuqeQIFO29RA/Champ-Portfolio?node-id=0-1&t=Z40UYD2OqNoWKx6W-1' },
     ],
     behance: 'https://www.behance.net/gallery/220108697/Food-App-Champ-Champ',
+  },
+  {
+    id: 'hokben',
+    number: '02',
+    title: 'HokBen App',
+    shortTitle: 'hokben app',
+    category: 'Food and beverage · Mobile app',
+    date: '',
+    panel: 'light',
+    route: ROUTES.hokben,
+    role: 'UI/UX Designer',
+    focus: 'Food ordering · Loyalty · Gamification',
+    description:
+      'The app was crafted to provide a smooth and intuitive user journey, enabling customers to browse, order, and track their meals in just a few taps, across Delivery, Take Away, Dine In, and Drive Thru.',
+    designNote:
+      'Loyalty is built in through HokBen Cash and Points, while a gamification layer of missions and a Lucky Wheel keeps customers coming back between orders.',
+    tags: ['Mobile App', 'Food Ordering', 'Loyalty', 'Gamification'],
+    highlights: [
+      'Four ordering modes: Delivery, Take Away, Dine In, Drive Thru',
+      'HokBen Cash and Points wallet with reward redemption',
+      'Hoka Mission levels and Lucky Wheel gamification',
+      'PIN-secured payment and live order tracking',
+    ],
+    cover: {
+      src: '/images/hokben/1.png',
+      alt: 'HokBen app home screen on a phone with promos, HokBen Cash balance and order options',
+    },
+    gallery: [
+      { src: '/images/hokben/2.png', caption: 'Sign in, home & menu', alt: 'HokBen screens: sign in, home, and menu browsing' },
+      { src: '/images/hokben/3.png', caption: 'Payment & orders', alt: 'HokBen screens: PIN entry, payment success and order list' },
+      { src: '/images/hokben/4.png', caption: 'Hoka Mission & Lucky Wheel', alt: 'HokBen gamification: Hoka Mission map and Lucky Wheel on phone mockups' },
+    ],
+    links: [
+      { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
+    ],
+    behance: 'https://www.behance.net/giovannanggast',
+  },
+  {
+    id: 'taman-safari',
+    number: '03',
+    title: 'Taman Safari Quest',
+    shortTitle: 'taman safari quest',
+    category: 'Gamification · Mobile app',
+    date: '',
+    panel: 'green',
+    route: ROUTES.safari,
+    role: 'UI/UX Designer',
+    focus: 'Illustrated map · QR missions · Rewards',
+    description:
+      'A zoo gamification concept for Taman Safari Indonesia that turns a park visit into a quest. Visitors follow an illustrated map, complete missions at animal areas, like taking a photo with a baby lion at Baby Zoo, and scan QR codes on site to collect points.',
+    designNote:
+      'Points add up across levels toward a reward: a Red Panda plush. Sharing a finished mission earns bonus points, pulling friends into the game too.',
+    tags: ['Mobile App', 'Gamification', 'Illustrated Map', 'QR Missions'],
+    highlights: [
+      'Illustrated park map with mission pins and level cards',
+      'QR check-in missions worth 100 pts each, verified by staff',
+      'Reward loop: collect 1,900 points to claim the prize',
+      '+500 bonus points for sharing completed missions',
+    ],
+    cover: {
+      src: '/images/taman-safari/1.png',
+      alt: 'Taman Safari Quest screens fanned out: illustrated park map, Red Panda plush mission and QR scan',
+    },
+    gallery: [
+      { src: '/images/taman-safari/2.png', caption: 'Map, mission & detail', alt: 'Taman Safari Quest: park map, Red Panda mission splash and Baby Zoo mission detail' },
+      { src: '/images/taman-safari/3.png', caption: 'Mission card & reward', alt: 'Taman Safari Quest: zoomed park map mission card and mission-complete trophy screen' },
+    ],
+    links: [
+      { label: 'view on behance', href: 'https://www.behance.net/giovannanggast' },
+      { label: 'view figma file', href: 'https://www.figma.com/design/m7l0mk5ug4GonwqNYTcvYW/TSI-Portfolio?node-id=0-1&t=2RPnvEYtzQ5JrDNd-1' },
+    ],
+    behance: 'https://www.behance.net/giovannanggast',
   },
   {
     id: 'cryptox',
