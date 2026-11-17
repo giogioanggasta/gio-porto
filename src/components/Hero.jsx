@@ -60,9 +60,6 @@ export default function Hero() {
               </svg>
               <span className="cursor-tag">
                 giovanni anggasta
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f6e94c" aria-hidden="true">
-                  <path d="M12 1 L14.4 9.6 L23 12 L14.4 14.4 L12 23 L9.6 14.4 L1 12 L9.6 9.6 Z" />
-                </svg>
               </span>
             </div>
           </div>

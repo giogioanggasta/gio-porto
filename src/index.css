@@ -100,7 +100,6 @@
         font-size:clamp(.95rem, 2.4vw, 1.35rem); letter-spacing:-.01em;
         padding:7px 18px 9px; border-radius:999px; display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
       }
-      .cursor-tag svg{ margin:0; }
       @media (max-width:760px){
         .stage{ padding:58px 0 64px; }
         .sel-box{ transform:translateX(-96%) rotate(-7deg); }
