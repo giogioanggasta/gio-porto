@@ -152,6 +152,7 @@
         position:relative; height:600px; overflow:hidden;
         background:var(--bg); border-top:1px solid var(--line); border-bottom:1px solid var(--line);
       }
+      /* Bleed is 7% so the full screen stays visible above the stage edge. */
       .stage-phone{
         position:absolute; left:50%; bottom:0; width:min(400px, 76vw); aspect-ratio:400/512;
         transform:translate(-50%, 7%);
