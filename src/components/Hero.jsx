@@ -1,4 +1,5 @@
 import { profile } from '../data/portfolio.js'
+import ChampStage from './ChampStage.jsx'
 
 export default function Hero() {
   return (
@@ -35,7 +36,9 @@ export default function Hero() {
               {profile.company} · {profile.location}
             </span>
           </div>
-
+        </div>
+        <ChampStage />
+        <div className="wrap">
           <div className="stage" aria-label="Portfolio cover">
             <div className="sel-box" aria-hidden="true">
               UX/UI

@@ -139,6 +139,8 @@ export default function ProjectCase({ project, onOpenGallery }) {
             <img
               src={asset('/images/hokben/10.png')}
               alt="HokBen information architecture diagram — Home, Menu, Order, Outlet and Profile sections with order flows"
+              width="2934"
+              height="2856"
               loading="lazy"
             />
           </button>
