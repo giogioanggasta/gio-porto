@@ -1,5 +1,4 @@
 import { profile } from '../data/portfolio.js'
-import ChampStage from './ChampStage.jsx'
 
 export default function Hero() {
   return (
@@ -28,7 +27,7 @@ export default function Hero() {
 
       <section className="hero" id="top" aria-labelledby="page-title">
         <div className="wrap">
-          <div className="hero-top">
+          <div className="hero-top rise rise-d1">
             <span>
               <b>{profile.name}</b> · {profile.role}
             </span>
@@ -36,10 +35,7 @@ export default function Hero() {
               {profile.company} · {profile.location}
             </span>
           </div>
-        </div>
-        <ChampStage />
-        <div className="wrap">
-          <div className="stage" aria-label="Portfolio cover">
+          <div className="stage rise rise-d2" aria-label="Portfolio cover">
             <div className="sel-box" aria-hidden="true">
               UX/UI
               <span className="h tl" />
@@ -67,7 +63,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hero-intro">
+          <div className="hero-intro rise rise-d3">
             <p className="role">
               {profile.heroLine.split('user-centered')[0]}
               <span>user-centered</span>
@@ -76,7 +72,7 @@ export default function Hero() {
             <p>{profile.heroIntro}</p>
           </div>
 
-          <div className="hero-actions">
+          <div className="hero-actions rise rise-d3">
             <a className="btn btn-blue" href="#work">
               see featured work
             </a>
@@ -88,7 +84,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="hero-meta">
+          <div className="hero-meta rise rise-d3">
             <div className="item">
               <b>{profile.role}</b>
               <span>{profile.availableNote}</span>
