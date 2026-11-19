@@ -161,10 +161,7 @@
         background:#0b0f0c; border-radius:46px; padding:11px;
         box-shadow:0 30px 60px rgba(12,59,46,.28), 0 4px 0 rgba(0,0,0,.08);
       }
-      .stage-phone-frame::before{
-        content:""; position:absolute; top:22px; left:50%; transform:translateX(-50%);
-        width:96px; height:24px; background:#0b0f0c; border-radius:999px; z-index:20; pointer-events:none;
-      }
+      /* No drawn island here: the cropped screen already carries the real one. */
       .stage-phone-screen{ position:relative; width:100%; height:100%; border-radius:36px; overflow:hidden; background:#102018; }
       .stage-phone-screen img{ width:100%; height:100%; object-fit:cover; display:block; }
       .satellite{

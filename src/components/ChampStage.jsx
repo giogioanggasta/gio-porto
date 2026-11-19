@@ -12,10 +12,10 @@ export default function ChampStage() {
         <div className="stage-phone-frame rise rise-d1">
           <div className="stage-phone-screen">
             <img
-              src={asset('/images/champ/1.png')}
-              alt="CHAMP food ordering app home screen"
-              width="1920"
-              height="1080"
+              src={asset('/images/champ/phone-screen.png')}
+              alt="CHAMP app product screen — Pepito pastry, Rp47.000"
+              width="341"
+              height="442"
               fetchpriority="high"
             />
           </div>
